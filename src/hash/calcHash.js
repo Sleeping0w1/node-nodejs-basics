@@ -20,7 +20,7 @@ const calculateHash = async () => {
   });
 
   hash.on("end", () => {
-    stdout.write("\n"); // Добавляем перенос строки в конце
+    stdout.write("\n");
   });
 
   file.pipe(hash);
